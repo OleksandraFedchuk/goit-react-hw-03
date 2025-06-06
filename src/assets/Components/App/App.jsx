@@ -24,16 +24,16 @@ export default function App() {
     setFilter(e.target.value);
   };
 
-  const filteredContacts = contacts.filter((contact) => {
-    contact.name.toLowerCase().includes(filter.toLowerCase());
-  });
+  const filteredContacts = contacts.filter((contact) =>
+    contact.name.toLowerCase().includes(filter.toLowerCase())
+  );
 
   return (
     <div>
       <h1>PhoneBook</h1>
-      <ContactForm />
-      <ContactList contacts={filteredContacts} />
       <SearchBox filter={filter} onFilterChange={handleFilterChange} />
+      <ContactList contacts={filteredContacts} />
+      <ContactForm />
     </div>
   );
 }

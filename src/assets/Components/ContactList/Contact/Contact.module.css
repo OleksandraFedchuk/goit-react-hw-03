@@ -1,0 +1,23 @@
+.container {
+  max-width: 100%;
+  border: 10px solid;
+  gap: 20px;
+}
+
+.wrap {
+  display: block;
+}
+
+.text {
+  font-size: medium;
+  color: rebeccapurple;
+  align-items: flex-start;
+}
+
+.button {
+  border: 2px blue;
+}
+
+.button:hover {
+  background-color: aquamarine;
+}

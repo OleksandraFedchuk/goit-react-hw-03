@@ -1,9 +1,15 @@
-export default function Contact({ id, name, number }) {
+import css from "./Contact.module.css";
+
+export default function Contact({ name, number }) {
   return (
-    <li>
-      <p>{id}</p>
-      <p>Name:{name}</p>
-      <p>Number:{number}</p>
-    </li>
+    <div className={css.container}>
+      <div className={css.wrap}>
+        <p className={css.text}>{name}</p>
+      </div>
+      <div className={css.wrap}>
+        <p className={css.text}>{number}</p>
+      </div>
+      <button className={css.button}>Delete</button>
+    </div>
   );
 }
